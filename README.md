@@ -1,7 +1,7 @@
 # Movie Recommendation Application
 
 ## Real-World Application
-This project reflects a real-world scenario where developers must build scalable, user-focused applications. By completing this project, developers gain hands-on experience in:
+This project reflects a real-world scenario where developers must build scalable, user-focused applications. By completing this project, I demonstrated my experience in:
 - Integrating third-party APIs to fetch dynamic data  
 - Building robust, reusable components using modern frameworks  
 - Managing user data with local storage or APIs  
