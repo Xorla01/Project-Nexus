@@ -1,6 +1,5 @@
 "use client";
 
-import MovieCard from "./components/MovieCard";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -28,10 +27,10 @@ export default function Home() {
 
       {/* Hero banner */}
       {/* Hero banner */}
-      <section className="bg-gray-900 text-white w-full rounded-lg p-8 mb-8 mt-4 text-center flex flex-col items-center">
+      <section className="bg-gray-900 text-white w-full p-4 mb-8 mt-4 text-center flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-4 text-yellow-500">Welcome.</h1>
         <p className="text-gray-300 mb-6 text-center max-w-xl">
-          Millions of movies, TV shows and people to discover. Explore now.
+          Millions of movies and TV shows to discover. Explore now.
         </p>
 
         <form
