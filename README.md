@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Movie Recommendation Application
 
-## Getting Started
+## Real-World Application
 
-First, run the development server:
+This project reflects a real-world scenario where developers must build scalable, user-focused applications. By completing this project, I demonstrated my experience in:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Integrating third-party APIs to fetch dynamic data
+- Building robust, reusable components using modern frameworks
+- Managing user data with local storage or APIs
+- Delivering a smooth, user-centered experience
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This is **movie recommendation application** where users can browse trending movies and receive recommendations tailored to their preferences.
+The project demonstrates:
 
-## Learn More
+- Dynamic routing
+- Local data storage
+- Interactive UI design
 
-To learn more about Next.js, take a look at the following resources:
+All working together to deliver an engaging user experience.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Goals
 
-## Deploy on Vercel
+### 1. Dynamic Routing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Implement dynamic routing using **Next.js** for detailed movie pages.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. User Personalization
+
+Enable users to save their favorite movies locally or via an API.
+
+### 3. Interactive Dashboard
+
+Build a responsive and visually appealing movie dashboard for browsing and recommendations.
+
+---
+
+## Technologies Used
+
+- **Next.js / React Native** — Server-side rendering and dynamic routing
+- **TypeScript** — Type safety and scalable development
+- **Styled Components** — Reusable, styled UI components
+
+---
+
+## Key Features
+
+### 1. API Integration
+
+- Fetch and display trending and recommended movies using a public movie API
+- Implement proper error handling and loading states during API calls
+
+### 2. Dynamic Routing
+
+- Create detailed pages for individual movies using Next.js dynamic routing
+- Ensure fast navigation and optimized rendering
+
+### 3. Save Favorite Movies
+
+- Allow users to save favorite movies using **local storage** or an API backend
+- Implement a favorites section on the dashboard
+
+### 4. Responsive & Interactive UI
+
+- Design a dashboard with trending and recommended movies
+- Use media queries to ensure full responsiveness
+- Add smooth interactions, including hover effects and animations
+
+---
+
+## Implementation Process
+
+### Git Commit Workflow
+
+**Initial Setup**
+
+- feat: initialize Next.js project with TypeScript
+- feat: integrate movie API for fetching data
+
+**Feature Development**
+
+- feat: implement detailed movie pages with dynamic routing
+- feat: add functionality to save favorite movies
+
+**UI Enhancements**
+
+- style: design UI using Styled Components
+
+**Bug Fixes**
+
+- fix: resolve rendering issues on dynamic pages
+
+**Documentation**
+
+- docs: add API setup and usage instructions
+
+---
+
+## Skills Demonstrated
+
+- API integration and data handling
+- Dynamic routing with Next.js
+- State management using local storage
+- Responsive web design
+- UI/UX best practices
+- Clean Git workflow
+
+---
+
+## Future Enhancements
+
+1. User authentication (login/signup)
+2. Backend database (MongoDB/Firebase)
+3. Watchlist feature
+4. AI-based personalized recommendations
+5. Ratings & review system
+
+---
+
+**Built with ❤️ by Richmond Cowther**
