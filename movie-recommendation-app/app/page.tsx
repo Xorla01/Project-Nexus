@@ -3,7 +3,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Suspense, useState, useEffect } from "react"; // 👈 Import useEffect
+import { Suspense, useState, useEffect } from "react"; 
 import PopularMovies from "./movies/[id]/popular";
 
 export default function Home() {
