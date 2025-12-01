@@ -24,6 +24,7 @@ export interface MovieResponse {
 
 export interface MovieCardProps {
   movie: Movie;
+  onFavoriteChange: (movie: Movie, isFavorite: boolean) => void;
 }
 
 export interface PageProps {
