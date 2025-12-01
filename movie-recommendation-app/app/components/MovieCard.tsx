@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -18,7 +18,7 @@ function MovieCard({ movie }: MovieCardProps) {
     ? new Date(movie.release_date).getFullYear()
     : "N/A";
 
-  // Lazy initialization 
+  // Lazy initialization
   const [isFavorite, setIsFavorite] = useState(() => {
     if (typeof window === "undefined") return false;
     const fav = JSON.parse(localStorage.getItem("favorites") || "[]");

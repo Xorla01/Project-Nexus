@@ -22,7 +22,7 @@ export default function Header() {
         </Link>
 
         {/* LINKS */}
-        <div className="flex items-center space-x-5">
+        <div className="flex items-center space-x-5 shrink-0">
           <Link
             href="/movies"
             className="hover:text-yellow-500 text-sm font-medium"
@@ -41,7 +41,6 @@ export default function Header() {
           >
             Genres
           </Link>
-
           <Link
             href="/favorite"
             className="hover:text-yellow-500 text-sm font-medium"
@@ -53,4 +52,3 @@ export default function Header() {
     </nav>
   );
 }
-
