@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import React, { useState } from "react";
 import type { Movie } from "../types/Movie";
 import MovieCard from "../components/MovieCard";
@@ -33,7 +34,9 @@ export default function FavoritePage() {
 
   return (
     <div className="pb-20 md:pb-8">
-      <Header />
+      <Suspense fallback={null}>
+        <Header />
+      </Suspense>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
         <h1 className="text-3xl md:text-3xl font-semibold">My Favorites</h1>
