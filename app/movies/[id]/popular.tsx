@@ -7,12 +7,16 @@ import type { Movie } from "@/app/types/Movie";
 
 export default function PopularMovies() {
   const [movies, setMovies] = useState<Movie[]>([]);
-  const [favorites, setFavorites] = useState<Movie[]>(() => {
-    if (typeof window === "undefined") return [];
-    const fav = localStorage.getItem("favorites");
-    return fav ? JSON.parse(fav) : [];
-  });
+  const [favorites, setFavorites] = useState<Movie[]>([]);
 
+  // Load favorites from localStorage safely
+  useEffect(() => {
+    const fav = localStorage.getItem("favorites");
+    if (fav) setFavorites(JSON.parse(fav));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Fetch popular movies
   useEffect(() => {
     getPopularMovies().then(setMovies);
   }, []);
@@ -36,7 +40,7 @@ export default function PopularMovies() {
           <MovieCard
             key={movie.id}
             movie={movie}
-            onFavoriteChange={handleFavoriteChange} // pass callback
+            onFavoriteChange={handleFavoriteChange}
           />
         ))}
       </div>
