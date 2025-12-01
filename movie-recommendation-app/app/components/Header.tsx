@@ -2,23 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
-import { useState } from "react";
 
 export default function Header() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-
-  const [query, setQuery] = useState(() => searchParams.get("query") || "");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (query.trim()) {
-      router.push(`/movies/search?query=${encodeURIComponent(query.trim())}`);
-    }
-  };
-
   const logo = "/StreamS_Logo.png";
 
   return (
@@ -68,3 +53,4 @@ export default function Header() {
     </nav>
   );
 }
+
